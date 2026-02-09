@@ -1,0 +1,14 @@
+<script>
+    const prices = [10, 20, 30, 55, 12, 34]
+    const tax = (item) => {
+        return item * 1.21
+    }
+    const pricewithtax = (prices.map(tax))
+    console.log(pricewithtax)
+    
+    let total = 0
+    pricewithtax.forEach (value => {
+        total += value
+    })
+    console.log(total)
+</script>
